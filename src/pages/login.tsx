@@ -425,10 +425,7 @@ class login extends Component<LoginProps, LoginState> {
       selectModel: model,
     });
   };
-
-  componentWillUnmount() {
-    console.log("Component will unmount")
-  }
+  
 }
 
 

@@ -16,7 +16,7 @@ export default () => {
   let store = configureStore({
     reducer: persistedReducer,
     devTools: true,
-    middleware : (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck:false}).concat(logger)
+    middleware : (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck:false})
   });
   let persistor = persistStore(store);
   return { store, persistor };
